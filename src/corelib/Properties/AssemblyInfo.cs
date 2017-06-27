@@ -28,11 +28,11 @@ using System.Runtime.InteropServices;
 // This keeps down how often you need to setup assembly binding redirects and chagne your project references.
 //
 // AssemblyVersion = Major.0.0.0
-[assembly: AssemblyVersion("0.0.0.0")]
+[assembly: AssemblyVersion("1.8.0")]
 // AssemblyFileVersion = Major.Minor.Patch.0
-[assembly: AssemblyFileVersion("0.0.0.0")]
+[assembly: AssemblyFileVersion("1.8.0")]
 // AssemblyInformationalVersion = Major.Minor.Patch-BuildMetadata
-[assembly: AssemblyInformationalVersion("0.0.0-dev")]
+[assembly: AssemblyInformationalVersion("1.8.0-dev")]
 
 [assembly: InternalsVisibleTo("OpenStackNet.Testing.Integration, PublicKey=002400000480000094000000060200000024000052534131000400000100010097de8570a3c78aa87191a604e55b95acf1a5075a317d622ab84287f8267b45755a46894b653c8b72d6d38815d2fa2dde8ba5d61c26ce8d5f398dc74ac3eb945fe1c3447753bdf4a3bfc1de3a489c4b5fb82f4cdc67681efffbd627ceca15531f638db991a702d7b8ad6825b51a151db543bad746a157b59ef325e0f44fe1bed1")]
 [assembly: InternalsVisibleTo("OpenStackNet.Testing.Unit, PublicKey=002400000480000094000000060200000024000052534131000400000100010097de8570a3c78aa87191a604e55b95acf1a5075a317d622ab84287f8267b45755a46894b653c8b72d6d38815d2fa2dde8ba5d61c26ce8d5f398dc74ac3eb945fe1c3447753bdf4a3bfc1de3a489c4b5fb82f4cdc67681efffbd627ceca15531f638db991a702d7b8ad6825b51a151db543bad746a157b59ef325e0f44fe1bed1")]

@@ -41,7 +41,7 @@ namespace Flurl.Extensions
         /// <param name="url">The URL.</param>
         public static Url RemoveNullOrEmptyQueryParams(this Url url)
         {
-            foreach (KeyValuePair<string, object> queryParam in url.QueryParams.ToList())
+            foreach ( var queryParam in url.QueryParams.ToList())
             {
                 if (queryParam.Value == null || queryParam.Value.ToString() == string.Empty)
                     url.QueryParams.Remove(queryParam);
@@ -113,9 +113,15 @@ namespace Flurl.Extensions
                 authenticatedMessageHandler.AuthenticationProvider = authenticationProvider;
             }
             return request;
-        }
+        }  
 
-        /// <inheritdoc cref="ClientConfigExtensions.WithHeader(FlurlClient,string,object)" />
+        /// <summary>
+        /// Sets an HTTP header to be sent with all requests made with this FlurlClient.
+        /// 
+        /// </summary> 
+        /// <returns>
+        /// The modified FlurlClient.
+        /// </returns>
         public static PreparedRequest WithHeader(this PreparedRequest request, string key, object value)
         {
             ((FlurlClient)request).WithHeader(key, value);
